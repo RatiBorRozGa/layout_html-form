@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Registration Form</h1>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <div class="form-field">
@@ -22,7 +24,8 @@
             name="Surname"
             type="text"
             id="Surname"
-            autocomplete="off">
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="form-field">
@@ -31,11 +34,12 @@
             name="name"
             type="text"
             id="name"
-            autocomplete="off">
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="form-field">
-          <label for="age">Age:
+          <label for="age">How old are you?:
             <input
             name="age"
             type="number"
@@ -43,30 +47,32 @@
             min="1"
             max="100"
             value="12"
-            autocomplete="off">
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="form-field">
           <label for="birth__date">
-            Type your date of birth:
+            Full date of birth:
           </label>
           <input
           name="birth__date"
           type="date"
-          id="birth__date">
+          id="birth__date"
+          >
         </div>
         <div class="form-field">
-          <label for="acception">I accept the term and conditions:
+          <label for="acception">I accept the term of the agreement:
           </label>
-          <input id="acception" name="accept"
-          type="checkbox">
-
+          <input id="acception"
+          name="accept"
+          type="checkbox"
+          >
         </div>
       </fieldset>
 
-
       <fieldset>
-        <legend>Registration data</legend>
+        <legend>Registration</legend>
         <div class="form-field">
           <label for="email">E-mail:
             <input
@@ -74,7 +80,8 @@
             name="email"
             type="email"
             placeholder="email@example.com"
-            autocomplete="off">
+            autocomplete="off"
+            >
           </label>
         </div>
         <div class="form-field">
@@ -87,56 +94,49 @@
             maxlength="40"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             id="password"
-            autocomplete="off">
+            autocomplete="off"
+            >
           </label>
-        </div>
-        <small>Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters</small>
-        <div class="form-field">
-          <label for="phone_namber">Phone number:
-            <input
-            id="phone_namber"
-            name="phone_namber"
-            type="tel"
-            pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            autocomplete="off">
-          </label>
-          <small>Format: +123-456-7890</small>
         </div>
       </fieldset>
 
       <fieldset>
-        <legend> Personal interests</legend>
+        <legend>An interesting fact abot you!</legend>
         <div class="form-field">
-          <label for="yes__box">Do you like animals:
+          <label for="yes__box">Do you love cats?
             <input
             name="answer__box"
             type="radio"
             value="Yes"
             checked
-            id="yes__box">Yes
+            id="yes__box"
+            >Yes
           </label>
           <label for="no__box">
             <input
             name="answer__box"
             type="radio"
             value="No"
-            id="no__box">No
+            id="no__box"
+            >No
           </label>
         </div>
         <div class="form-field">
-          <label for="color__form">Choose your favorite color
+          <label for="color__form">What is your favorite
             <input
             name="color__form"
             type="color"
-            id="color__form">
+            id="color__form"
+            >
           </label>
         </div>
         <div class="form-field">
-          <label for="daystart__form">What time do you start your day
+          <label for="daystart__form">What time do you go to bed?
             <input
             type="time"
             name="daystart__form"
-            id="daystart__form">
+            id="daystart__form"
+            >
           </label>
         </div>
         <div class="form-field">
@@ -144,7 +144,8 @@
             <select
             multiple
             name="car__brand"
-            id="car__brand">
+            id="car__brand"
+            >
               <option value="Mercedes-Benz">Mercedes-Benz</option>
               <option value="BMW">BMW</option>
               <option value="Porshe">Porshe</option>
@@ -155,19 +156,20 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="range__form">How much do you like sending form like this?
+          <label for="range__form">How do you rate our work?
             <input
             type="range"
             min="0"
             max="10"
             id="range__form"
-            name="range__form">
+            name="range__form"
+            >
           </label>
         </div>
       </fieldset>
 
       <fieldset>
-        <legend>User additions</legend>
+        <legend>Additional info</legend>
         <div class="form-field">
           <label for="text__field">Comments:
             <textarea
@@ -175,14 +177,18 @@
             name="text__field"
             id="text__field"
             cols="30"
-            rows="3">
+            rows="3"
+            >
             </textarea>
           </label>
         </div>
         <div class="form-field">
-          Are you checked all you answers?
+          Would you recommend us?
           <label for="final__check">
-            <select name="final__check" id="final__check">
+            <select
+            name="final__check"
+            id="final__check"
+            >
               <option selected value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
@@ -194,7 +200,8 @@
         type="submit"
         id="submit"
         name="submit"
-        value="submit">
+        value="submit"
+        >
       </div>
     </form>
     <script type="text/javascript" src="./main.js"></script>
