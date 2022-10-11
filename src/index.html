@@ -7,11 +7,196 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML Form</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <h1>Registration Form</h1>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-field">
+          <label for="Surname">Surname:
+            <input
+            name="Surname"
+            type="text"
+            id="Surname"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="name">Name:
+            <input
+            name="name"
+            type="text"
+            id="name"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="age">Age:
+            <input
+            name="age"
+            type="number"
+            id="age"
+            min="1"
+            max="100"
+            value="12"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="birth__date">
+            Type your date of birth:
+          </label>
+          <input
+          name="birth__date"
+          type="date"
+          id="birth__date">
+        </div>
+        <div class="form-field">
+          <label for="acception">I accept the term and conditions:
+          </label>
+          <input id="acception" name="accept"
+          type="checkbox">
+
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Registration data</legend>
+        <div class="form-field">
+          <label for="email">E-mail:
+            <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@example.com"
+            autocomplete="off">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="password">Password:
+            <input
+            name="password"
+            type="password"
+            required
+            minlength="12"
+            maxlength="40"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            id="password"
+            autocomplete="off">
+          </label>
+        </div>
+        <small>Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters</small>
+        <div class="form-field">
+          <label for="phone_namber">Phone number:
+            <input
+            id="phone_namber"
+            name="phone_namber"
+            type="tel"
+            pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            autocomplete="off">
+          </label>
+          <small>Format: +123-456-7890</small>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend> Personal interests</legend>
+        <div class="form-field">
+          <label for="yes__box">Do you like animals:
+            <input
+            name="answer__box"
+            type="radio"
+            value="Yes"
+            checked
+            id="yes__box">Yes
+          </label>
+          <label for="no__box">
+            <input
+            name="answer__box"
+            type="radio"
+            value="No"
+            id="no__box">No
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="color__form">Choose your favorite color
+            <input
+            name="color__form"
+            type="color"
+            id="color__form">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="daystart__form">What time do you start your day
+            <input
+            type="time"
+            name="daystart__form"
+            id="daystart__form">
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="car__brand">What are your favorite brand of cars?
+            <select
+            multiple
+            name="car__brand"
+            id="car__brand">
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="BMW">BMW</option>
+              <option value="Porshe">Porshe</option>
+              <option value="Subaru">Subaru</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Lexus">Lexus</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="range__form">How much do you like sending form like this?
+            <input
+            type="range"
+            min="0"
+            max="10"
+            id="range__form"
+            name="range__form">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>User additions</legend>
+        <div class="form-field">
+          <label for="text__field">Comments:
+            <textarea
+            autocomplete="off"
+            name="text__field"
+            id="text__field"
+            cols="30"
+            rows="3">
+            </textarea>
+          </label>
+        </div>
+        <div class="form-field">
+          Are you checked all you answers?
+          <label for="final__check">
+            <select name="final__check" id="final__check">
+              <option selected value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <div class="form__field">
+        <input
+        type="submit"
+        id="submit"
+        name="submit"
+        value="submit">
+      </div>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
