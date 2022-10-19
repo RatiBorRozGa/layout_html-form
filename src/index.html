@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="form-field" for="Surname">
+        <label
+          class="form-field"
+          for="Surname"
+        >
           Surname:
           <input
             name="Surname"
@@ -28,8 +30,10 @@
           >
         </label>
         <label
-         class="form-field"
-         for="name">Name:
+          class="form-field"
+          for="name"
+        >
+          Name:
           <input
             name="name"
             type="text"
@@ -38,7 +42,9 @@
         </label>
         <label
           class="form-field"
-          for="age">How old are you?:
+          for="age"
+        >
+          How old are you?:
           <input
             name="age"
             type="number"
@@ -63,8 +69,10 @@
         </label>
 
         <label
-        class="form-field"
-          for="acception">I accept the term of the agreement:
+          class="form-field"
+          for="acception"
+        >
+          I accept the term of the agreement:
           <input
           id="acception"
           name="accept"
@@ -77,8 +85,8 @@
         <legend>Registration</legend>
 
         <label
-        class="form-field"
-        for="email">E-mail:
+          class="form-field"
+          for="email">E-mail:
           <input
             id="email"
             name="email"
@@ -89,7 +97,9 @@
         </label>
         <label
           class="form-field"
-          for="password">Password:
+          for="password"
+        >
+          Password:
           <input
             name="password"
             type="password"
@@ -108,26 +118,25 @@
         <label
           class="form-field"
           for="yes__box"
-          >Do you love cats?
+        >
+          Do you love cats?
           <input
             name="answer__box"
             type="radio"
             value="Yes"
             id="yes__box"
-          > Yes
+          >
+            Yes
           <label for="no__box">
             <input
             name="answer__box"
             type="radio"
             value="No"
             id="no__box"
-            > No
+            >
+              No
           </label>
-
         </label>
-
-
-
         <label
           class="form-field"
           for="color__form">What is your favorite color?
@@ -139,7 +148,9 @@
         </label>
         <label
           class="form-field"
-          for="daystart__form">What time do you go to bed?
+          for="daystart__form"
+        >
+          What time do you go to bed?
           <input
             type="time"
             name="daystart__form"
@@ -148,7 +159,9 @@
         </label>
         <label
           class="form-field"
-          for="car__brand">What are your favorite brand of cars?
+          for="car__brand"
+        >
+          What are your favorite brand of cars?
           <select
             multiple
             name="car__brand"
@@ -162,7 +175,9 @@
 
         <label
           class="form-field"
-          for="range__form">How do you rate our work?
+          for="range__form"
+        >
+          How do you rate our work?
           <input
             type="range"
             min="1"
@@ -177,18 +192,21 @@
         <legend>Additional info</legend>
         <label
           class="form-field"
-          for="text__field">Comments:
+          for="text__field"
+        >
+          Comments:
           <textarea
             autocomplete="off"
-            name="text__field">
+            name="text__field"
+          >
           </textarea>
         </label>
 
         <label
           class="form-field"
-          for="final__check">
-        Would you recommend us?
-
+          for="final__check"
+        >
+          Would you recommend us?
           <select
             name="final__check"
             id="final__check"
@@ -196,7 +214,8 @@
             <option selected value="Yes">
               Yes
             </option>
-            <option value="No">No
+            <option value="No">
+              No
             </option>
           </select>
 
