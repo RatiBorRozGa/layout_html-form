@@ -18,8 +18,8 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="form-field"
-          for="Surname">Surname:
+        <label class="form-field" for="Surname">
+          Surname:
           <input
             name="Surname"
             type="text"
@@ -52,7 +52,8 @@
 
         <label
           class="form-field"
-          for="birth__date">
+          for="birth__date"
+        >
           Full date of birth:
           <input
           name="birth__date"
@@ -64,7 +65,8 @@
         <label
         class="form-field"
           for="acception">I accept the term of the agreement:
-          <input id="acception"
+          <input
+          id="acception"
           name="accept"
           type="checkbox"
           >
@@ -113,12 +115,15 @@
             value="Yes"
             id="yes__box"
           > Yes
-          <input
+          <label for="no__box">
+            <input
             name="answer__box"
             type="radio"
             value="No"
             id="no__box"
           > No
+          </label>
+
         </label>
 
 
@@ -188,8 +193,8 @@
             name="final__check"
             id="final__check"
           >
-            <option selected
-              value="Yes">Yes
+            <option selected value="Yes">
+              Yes
             </option>
             <option value="No">No
             </option>
