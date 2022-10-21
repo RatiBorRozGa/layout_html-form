@@ -37,7 +37,7 @@
         </label>
 
         <label class="form-field" for="age">
-          How old are you?:
+          How old are You?
           <input
             name="age"
             type="number"
@@ -59,7 +59,7 @@
         </label>
 
         <label class="form-field" for="acception">
-          I accept the term of the agreement:
+          I accept the term of the agreement
           <input
             id="acception"
             name="accept"
@@ -99,22 +99,24 @@
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="form-field" for="yesBox">
-          Do you love cats?
-          <input
-            name="yesBox"
-            type="radio"
-            value="Yes"
-            id="yesBox"
-          >
-            Yes
+        <label class="form-field">
+        Do you love cats?
+          <label for="yesBox">
 
+            <input
+              name="answerBox"
+              type="radio"
+              value="Yes"
+              id="yesBox"
+            >
+              Yes
+          </label>
           <label for="noBox">
             <input
-            name="noBox"
-            type="radio"
-            value="No"
-            id="noBox"
+              name="answerBox"
+              type="radio"
+              value="No"
+              id="noBox"
             >
               No
           </label>
@@ -167,8 +169,7 @@
         <legend>Additional info</legend>
         <label class="form-field" for="textField">
           Comments:
-          <textarea autocomplete="off" name="textField">
-          </textarea>
+          <textarea autocomplete="off" name="textField"></textarea>
         </label>
 
         <label class="form-field" for="finalCheck">
